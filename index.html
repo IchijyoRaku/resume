@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的简历</title>
+    <!-- <title>我的简历</title> -->
     <link rel="stylesheet" href="styles.css">
     <!-- 可以使用Font Awesome图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,37 +11,38 @@
 <body>
     <div class="resume-container">
         <!-- 简历内容将放在这里 -->
+        <header class="resume-header">
+            <div class="header-content">
+                <h1>曾芳诚</h1>
+                <p class="title">机械制造及其自动化（机电）</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 199-1712-3621</p>
+                    <p><i class="fas fa-envelope"></i> 1604587421@qq.com</p>
+                    <p><i class="fas fa-venus-mars"></i> 男</p>
+                    <p><i class="fab fa-github"></i> https://ichijyoraku.github.io/resume/</p>
+                </div>
+            </div>
+            <!-- <div class="profile-pic">
+                <img src="简历照片.jpg" alt="个人照片">
+            </div> -->
+        </header>
+
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-<header class="resume-header">
-    <div class="header-content">
-        <h1>曾芳诚</h1>
-        <p class="title">机械制造及其自动化（机电）</p>
-        <div class="contact-info">
-            <p><i class="fas fa-phone"></i> 199-1712-3621</p>
-            <p><i class="fas fa-envelope"></i> 1604587421@qq.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> 男</p>
-            <p><i class="fab fa-github"></i> github.com/yourusername</p>
-        </div>
-    </div>
-    <div class="profile-pic">
-        <img src="profile.png" alt="个人照片">
-    </div>
-</header>
+
 <main class="resume-main">
     <!-- 左侧栏 -->
     <aside class="resume-left">
         <section class="skills">
             <h2><i class="fas fa-code"></i> 技能</h2>
             <div class="skill-category">
-                <h3>编程语言</h3>
                 <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                </ul>
+                    <li>UG NX/Solidworks</li>
+                    <li>Python/Lua/md/wikitext</li>
+                    <li>STM32/PLC</li>
+                    <li>Premiere/Photoshop</li>
             </div>
             <!-- 更多技能类别 -->
         </section>
@@ -49,45 +50,74 @@
         <section class="education">
             <h2><i class="fas fa-graduation-cap"></i> 教育背景</h2>
             <div class="education-item">
-                <h3>清华大学</h3>
-                <p class="degree">计算机科学与技术 - 硕士</p>
-                <p class="date">2018-2021</p>
+                <h3>山东大学</h3>
+                <p class="degree">机械制造及其自动化（机电） 本科</p>
+                <!-- <p class="date">2020-至今</p> -->
             </div>
             <!-- 更多教育经历 -->
         </section>
+        <section class="about">
+            <h2><i class="fas fa-user"></i> 关于我</h2>
+            <p>兴趣广泛，情绪稳定</p>
+            <p>喜欢游戏逆向和分析</p>
+            <p>做事准则：大于90%</p>
+        </section>
+        
     </aside>
     
     <!-- 右侧主内容 -->
     <div class="resume-right">
-        <section class="about">
-            <h2><i class="fas fa-user"></i> 关于我</h2>
-            <p>我是一个充满激情的前端开发工程师，拥有5年开发经验，专注于创建响应式、用户友好的网页应用...</p>
-        </section>
         
         <section class="experience">
-            <h2><i class="fas fa-briefcase"></i> 工作经历</h2>
+            <h2><i class="fas fa-briefcase"></i> 项目经历</h2>
+
             <div class="experience-item">
-                <h3>高级前端开发工程师</h3>
-                <p class="company">ABC科技有限公司</p>
-                <p class="date">2020-至今</p>
+                <h3>无碳小车设计与制作</h3>
+                <!-- <p class="company">ABC科技有限公司</p> -->
+                <!-- <p class="date"></p> -->
                 <ul class="responsibilities">
-                    <li>负责公司核心产品的前端架构设计和开发</li>
-                    <li>带领3人前端团队完成多个重要项目</li>
-                    <li>优化页面性能，提升用户体验</li>
+                    <li>预定轨迹循迹小车制作</li>
+                    <li>方案制定、尺寸计算、三维建模、装配出图、实物制作</li>
                 </ul>
             </div>
             <!-- 更多工作经历 -->
+            <div class="experience-item">
+                <h3>四自由度码垛机械臂设计</h3>
+                <!-- <p class="company">ABC科技有限公司</p> -->
+                <!-- <p class="date"></p> -->
+                <ul class="responsibilities">
+                    <li>结构与控制方案设计</li>
+                    <li>三维建模、装配出图、工艺过程卡、PLC控制方案</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>基于深度学习的脑电信号分类研究与应用（毕设）</h3>
+                <!-- <p class="company">ABC科技有限公司</p> -->
+                <!-- <p class="date"></p> -->
+                <ul class="responsibilities">
+                    <li>脑电信号预处理和特征提取</li>
+                    <li>深度学习模型训练，性能评估和调优</li>
+                    <li>上位机可视化界面UI编写与通讯</li>
+                    <li>信号分类结果转换与康复器具控制</li>
+                </ul>
+            </div>
+
+
         </section>
         
         <section class="projects">
-            <h2><i class="fas fa-project-diagram"></i> 项目经历</h2>
+            <h2><i class="fas fa-project-diagram"></i> 其余经历</h2>
             <div class="project-item">
-                <h3>电商平台前端重构</h3>
-                <p class="date">2021</p>
+                <!-- <h3>电商平台前端重构</h3> -->
+                <!-- <p class="date">2021</p> -->
                 <ul class="project-details">
-                    <li>使用Vue.js重构旧版jQuery代码</li>
-                    <li>实现响应式设计，适配移动端</li>
-                    <li>性能优化，首屏加载时间减少40%</li>
+                    <li>校内驿站兼职</li>
+                    <li>个人自媒体账号单平台累计播放超200w</li>
+                    <li>个人博客更新PC软硬件笔记超3w字</li>
+                    <li>为Sekiro BWIKI编写的的AnimStudio教程页浏览量排行第二</li>
+                    <li>Sekiro弹开原理与EldenRing里技机制解析的国内首发</li>
+                    <li>这份简历使用web制作</li>
                 </ul>
             </div>
             <!-- 更多项目 -->
