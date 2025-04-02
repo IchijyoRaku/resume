@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // 触发滚动事件以显示初始可见的部分
-    window.dispatchEvent(new Event('scroll'));
+    // window.dispatchEvent(new Event('scroll'));
     
     // 可以添加打印按钮
     const printButton = document.createElement('button');
